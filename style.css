@@ -19,11 +19,14 @@ div {
     border: solid black 1px;
 }
 
+.side-bar, button {
+    background-color: #064E3B;
+}
+
 .side-bar {
     grid-row: 1 / 3;
     display: grid;
     grid-template-rows: 75px 3fr 1fr;
-    background-color: #166534;
 }
 
 .logo {
@@ -37,13 +40,17 @@ div {
     width: auto;
 }
 
-.side-main-menu svg {
+.side-main-menu svg, 
+.side-mini-menu svg {
     height: 60%;
     justify-self: center;
 }
 
-a {
+a, button {
     color: #FFFFFF;
+}
+
+a {
     font-size: 24px;
     justify-self: start;
 }
@@ -57,7 +64,7 @@ a {
     margin-left: 30px;
     column-gap: 10px;
     grid-template-columns: 50px 1fr;
-    grid-template-rows: repeat(auto-fill, 60px);
+    grid-template-rows: repeat(auto-fill, 40px);
     align-items: center;
 }
 
@@ -65,15 +72,90 @@ path {
     fill: #FFFFFF;
 }
 
+.dark-svg {
+    fill: #000000;
+}
+
 .header {
     display: grid;
     grid-template-rows: 75px 1fr;
+    background-color: #ECFDF5;
+}
+
+.header-nav-bar {
+    margin-left: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px 1fr 100px 75px 200px;
+}
+
+.header-nav-bar svg, .header-nav-bar img {
+    justify-self: center;
+}
+
+.header-nav-bar svg {
+    height: 40%;
+}
+
+.header-nav-bar input {
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    background-color: lightgrey;
+    height: 30%;
+    width: 60%;
+    padding-left: 10px;
+}
+
+.header-nav-bar img {
+    height: 50px;
+}
+
+.header-nav-bar h2 {
+    font-size: 20px;
+    color: #000000;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.header-main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 150px 1fr repeat(3, 150px);
+}
+
+.header-main img {
+    height: 100px;
+    justify-self: center;
+}
+
+.header-main p {
+    font-weight: bold;
+    margin: 5px;
+}
+
+.greet-intro {
+    font-size: 20px;
+}
+
+.name {
+    font-size: 30px;
+}
+
+button {
+    height: 30%;
+    width: 75%;
+    border-radius: 20px;
+    justify-self: center;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    background-color: #D1FAE5;
 }
 
 .projects {
@@ -83,4 +165,9 @@ path {
 h1 {
     font-size: 30px;
     color: #FFFFFF;
+}
+
+img {
+    width: auto;
+    border-radius: 50%;
 }
